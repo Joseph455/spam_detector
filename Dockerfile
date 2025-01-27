@@ -1,4 +1,4 @@
-FROM python:3.12
+FROM python:3.11
 
 WORKDIR /spam_detector/
 
@@ -35,4 +35,4 @@ COPY . /spam_detector/
 RUN --mount=type=cache,target=/root/.cache/uv \
     uv sync
 
-CMD ["fastapi", "run", "--workers", "4", "./main.py"]
+CMD ["fastapi", "run", "--workers", "1", "./main.py"]
