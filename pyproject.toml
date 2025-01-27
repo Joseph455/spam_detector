@@ -1,9 +1,9 @@
 [project]
 name = "spam-detector"
 version = "0.1.0"
-description = "Add your description here"
+description = "CSC583 term project. Spam detector"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.11"
 dependencies = [
     "fastapi[standard]>=0.115.7",
     "ipython>=8.18.1",
