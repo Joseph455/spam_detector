@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Send to API
-        const apiResponse = await fetch('http://127.0.0.1:8000/api/scan/', {
+        const apiResponse = await fetch('https://spam-detector-h5wk.onrender.com/api/scan/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
