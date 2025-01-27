@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Email Spam Detector",
+    "version": "1.0",
+    "description": "Detect spam emails using ML models. This is a students term project and should not be used externally.",
+    "host_permissions": ["https://mail.google.com/*"],
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.webp"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://mail.google.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
