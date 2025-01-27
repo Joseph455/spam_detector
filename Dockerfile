@@ -1,9 +1,6 @@
-FROM python:3.12-alpine
+FROM python:3.12
 
 WORKDIR /spam_detector/
-
-# Install OS dependecies bash
-RUN apk --no-cache add curl bash gcc python3-dev musl-dev linux-headers
 
 # Install uv
 # Ref: https://docs.astral.sh/uv/guides/integration/docker/#installing-uv
